@@ -16,7 +16,7 @@ def update_backstage_pass(item):
     if item.sell_in < 11:
         item.quality += 1
     if item.sell_in < 5:
-            item.quality += 1
+        item.quality += 1
     if item.sell_in < 0:
         item.quality = 0
     return item
@@ -24,8 +24,7 @@ def update_backstage_pass(item):
 
 def update_aged_brie(item):
 
-    if item.quality < 50:
-        item.quality += 1
+    item.quality += 1
     return item
 
 def update_conjured(item):
